@@ -1,0 +1,64 @@
+package shape.java;
+public class ShapeJava
+{
+public void draw()
+{
+        System.out.println("Drawing a shape");
+}
+public void erase()
+{
+  System.out.println("Erassing a shape");
+}
+}
+class Circle extends ShapeJava
+{
+    public void draw()
+    {
+     System.out.println("Drawing a circle");  
+    }
+    public void erase()
+    {
+      System.out.println("Erasing a circle"); 
+    }
+}
+class Triangle extends ShapeJava
+{
+    public void draw()
+    {
+     System.out.println("Drawing a triangle"); 
+    }
+    public void erase()
+    {
+      System.out.println("Erasing a triangle"); 
+    }
+}
+class Square extends ShapeJava
+{
+    public void draw()
+    {
+         System.out.println("Drawing a Square");
+    }
+    public void erase()
+    {
+         System.out.println("Erasing a square"); 
+    }
+}
+class Main
+{
+  public static void main(String[] args)
+  {
+      Circle c = new Circle();
+      Triangle t = new Triangle();
+      Square s = new Square();
+      
+       System.out.println("Using Circle object:"); 
+       c.draw();
+       c.erase();
+       System.out.println("\nUsing Triangle object:"); 
+        t.draw();
+        t.erase();
+       System.out.println("\nUsing Square object:"); 
+       s.draw();
+       s.erase();
+    }
+}
